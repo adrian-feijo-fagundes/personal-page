@@ -1,0 +1,315 @@
+:root {    
+    --color-1: #513f94; 
+    --color-2: #ffeecc; 
+    --color-3: #29268C; 
+    --color-4: #3264A6; 
+    --color-5: #671a94; 
+}
+
+/*
+    header
+    .nav-links
+    about
+    tech
+    projects
+    contact
+    footer
+*/
+header {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.226);
+    color: rgb(0, 0, 0);
+}
+.nav-link {
+    color: rgb(123, 22, 182);
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.603);
+}
+body {
+    background-color: #a15ae4;
+}
+section {
+    z-index: -3;
+    background-color: rgba(255, 255, 255, 0.849);
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.473);
+}
+@font-face {
+  font-family: 'SFAlien';
+  src: url('assets/fonts/SFAlienEncounters.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fonte itálica */
+@font-face {
+  font-family: 'SFAlien';
+  src: url('assets/fonts/SFAlienEncounters-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    z-index: 2;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div h2  {
+    font-family: "SFAlien";
+    font-size: 2em;
+    font-weight: normal;
+}
+nav {
+    max-width: 1000px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    width: 100%;
+}
+.banner-img-container {
+    position: relative;
+    width: 100%;   
+    height: 450px; 
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: auto; 
+    z-index: -1;   
+}
+
+.banner-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%); /* centraliza no meio */
+    text-align: center;
+    z-index: 1;  
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-content h1 {
+    margin: 0;
+    font-family: 'SFAlien';
+    font-size: 8em;
+    font-weight: normal;
+}
+
+.banner-content h2 {
+  margin: 10px 0px 30px 0px;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.title {
+    padding: 12px 0px;
+    margin-bottom: 10px;
+    text-indent: 0px;
+}
+
+p {
+    text-align: justify;
+    margin: 5px;
+}
+h1 {
+    font-size: 30px;   
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+.about-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+p {
+    font-family: "Advent Pro", sans-serif;
+    margin: 10px 20px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.my-photo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-photo img {
+    width: 80%;
+}
+
+.tech, .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech h2, .projects h2, .contact h2  {
+    margin: 10px;
+}
+.tech-container { 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.tech-img {
+    margin: 10px;
+    width: 100px;
+}
+
+
+.projects {
+    display: flex;
+    align-items: center;
+}
+.projects-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+.project p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.project-img-container {
+    position: relative;
+    width: 100%;   
+    height: 200px; 
+    overflow: hidden;
+}
+
+.project img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover;
+    object-position: 30% 30%;
+    z-index: -1;
+}
+
+.project h3 {
+    margin: 20px;
+}
+
+.contact ul {
+    display: flex;
+    margin: 30px;
+    width: 100%;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-media-img {
+    width: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
